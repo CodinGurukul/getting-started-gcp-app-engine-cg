@@ -49,23 +49,30 @@ handlers:
 ```
 
 ### Creating the index.html file
-Create an `HTML` file that will be served when someone navigates to the root page of your website. Store this file in your `www` directory.
+  Create an `HTML` file that will be served when someone navigates to the root page of your website. Store this file in your `www`   directory.
 
-`index.html` file
+  `index.html` file
 
-```js
-<html>
-  <head>
-    <title>Hello, world!</title>
-    <link rel="stylesheet" type="text/css" href="/css/style.css">
-  </head>
-  <body>
-    <h1>Hello, world!</h1>
-    <p>
-      This is a simple static HTML file that will be served from Google App
-      Engine.
-    </p>
-  </body>
-</html>
-```
+  ```js
+  <html>
+    <head>
+      <title>Hello, world!</title>
+      <link rel="stylesheet" type="text/css" href="/css/style.css">
+    </head>
+    <body>
+      <h1>Hello, world!</h1>
+      <p>
+        This is a simple static HTML file that will be served from Google App
+        Engine.
+      </p>
+    </body>
+  </html>
+  ```
+  
+### Deploying your application to App Engine
+Use command in GCP SDK with the dir
+`gcloud app deploy`
+
+### View the Web Application
+`gcloud app browser`
 
