@@ -18,13 +18,17 @@ This guide uses the following structure for the project:
    * index.html
 
 #### Details
-1. <b>app.yaml</b>: Configure the settings of your App Engine application.
-1. <b>www/</b>: Directory to store all of your static files, such as HTML, CSS, images, and JavaScript.
-1. <b>css/</b>: Directory to store stylesheets.
-1. <b>style.css</b>: Basic stylesheet that formats the look and feel of your site.
-1. <b>images/</b>: Optional directory to store images.
-1. <b>index.html</b>: An HTML file that displays content for your website.
-1. <b>js/</b>: Optional directory to store JavaScript files.
+1. <b>`app.yaml`</b>: Configure the settings of your App Engine application.
+1. <b>`www/`</b>: Directory to store all of your static files, such as HTML, CSS, images, and JavaScript.
+1. <b>`css/`</b>: Directory to store stylesheets.
+1. <b>`style.css`</b>: Basic stylesheet that formats the look and feel of your site.
+1. <b>`img/`</b>: Optional directory to store images.
+1. <b>`index.html`</b>: An HTML file that displays content for your website.
+1. <b>`js/`</b>: Optional directory to store JavaScript files.
 1. Other asset directories.
+
+
+### Creating the app.yaml file
+The `app.yaml` file is a configuration file that tells App Engine how to map URLs to your static files. In the following steps, you will add handlers that will load `www/index.html` when someone visits your website, and all static files will be stored in and called from the `www` directory. 
 
 
