@@ -31,4 +31,41 @@ This guide uses the following structure for the project:
 ### Creating the app.yaml file
 The `app.yaml` file is a configuration file that tells App Engine how to map URLs to your static files. In the following steps, you will add handlers that will load `www/index.html` when someone visits your website, and all static files will be stored in and called from the `www` directory. 
 
+`app.yaml` file 
+
+```js
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /
+  static_files: www/index.html
+  upload: www/index.html
+
+- url: /(.*)
+  static_files: www/\1
+  upload: www/(.*)
+```
+
+### Creating the index.html file
+Create an `HTML` file that will be served when someone navigates to the root page of your website. Store this file in your `www` directory.
+
+`index.html` file
+
+```js
+<html>
+  <head>
+    <title>Hello, world!</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+  </head>
+  <body>
+    <h1>Hello, world!</h1>
+    <p>
+      This is a simple static HTML file that will be served from Google App
+      Engine.
+    </p>
+  </body>
+</html>
+```
 
