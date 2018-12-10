@@ -16,7 +16,8 @@ This guide uses the following structure for the project:
    * js/
    * img/
    * index.html
-          
+
+#### Details
 1. <b>app.yaml</b>: Configure the settings of your App Engine application.
 1. <b>www/</b>: Directory to store all of your static files, such as HTML, CSS, images, and JavaScript.
 1. <b>css/</b>: Directory to store stylesheets.
