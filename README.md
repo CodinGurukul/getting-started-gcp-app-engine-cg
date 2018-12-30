@@ -53,7 +53,7 @@ handlers:
 
   `index.html` file
 
-  ```js
+  ```html
   <html>
     <head>
       <title>Hello, world!</title>
